@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class WelcomeController {
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("messge", "Contact your local Child Support Office or call 1-800-332-6347");
+        model.addAttribute("message", "Contact your local Child Support Office or call 1-800-332-6347");
         return "home";
     }
 
