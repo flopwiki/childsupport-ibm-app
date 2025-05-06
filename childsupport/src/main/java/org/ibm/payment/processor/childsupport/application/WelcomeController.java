@@ -12,9 +12,5 @@ public class WelcomeController {
         return "hello";
     }
 
-    @GetMapping("/help")
-    public String help(Model model) {
-        model.addAttribute("message", "Application for Child Support Services. All customers must complete an application and may be required to pay a $15 application fee.");
-        return "help";
-    }
+
 }
