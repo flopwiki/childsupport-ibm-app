@@ -7,10 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HelpController {
-
-    @GetMapping("/help")
-    public String helpPage(Model model) {
+public class HomeController {
+    @GetMapping("/home")
+    public String homePage(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
         String role = auth.getAuthorities().stream()
@@ -21,6 +20,6 @@ public class HelpController {
         model.addAttribute("username", username);
         model.addAttribute("role", role.toLowerCase()); // "admin", "user", or "guest"
 
-        return "help";
+        return "home";
     }
 }
