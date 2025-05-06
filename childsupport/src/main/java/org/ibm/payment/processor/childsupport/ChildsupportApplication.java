@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ChildsupportApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("spring.devtools.restart.enabled", "true");
 		SpringApplication.run(ChildsupportApplication.class, args);
 
 	}

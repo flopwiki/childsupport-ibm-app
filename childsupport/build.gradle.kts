@@ -46,6 +46,7 @@ dependencies {
 
 	// compileOnly
 	compileOnly("org.projectlombok:lombok")
+	compileOnly("org.springframework.boot:spring-boot-devtools")
 
 	// annotationProcessor
 	annotationProcessor("org.projectlombok:lombok")
