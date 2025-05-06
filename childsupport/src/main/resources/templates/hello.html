@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Child Support Payment System</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+</head>
+<body>
+<header>
+    <h1>Child Support Payment System</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+            <li><a th:href="@{/users/register}">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="welcome">
+        <h2>Welcome to the Child Support Payment Portal</h2>
+        <p>This system helps manage child support payments efficiently and securely.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>For Payers</h3>
+                <p>Make payments, view payment history, and track obligations.</p>
+            </div>
+            <div class="feature">
+                <h3>For Payees</h3>
+                <p>Track incoming payments and manage case information.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Child Support Payment System</p>
+</footer>
+
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

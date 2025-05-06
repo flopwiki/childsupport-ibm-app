@@ -20,20 +20,8 @@ public class ChildsupportApplication {
 	}
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-			return "Child Support App: Payment Service is running! 🚀";
+			return "hello";
 	}
-
-	@GetMapping("/")
-	public String home() {
-		return "redirect:/hello";
-	}
-
-
-	@GetMapping("/error")
-	public String errorPage() {
-		return ("This is a test error message");
-	}
-
 
 
 }
