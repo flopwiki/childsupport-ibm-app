@@ -18,7 +18,7 @@
 //    @PostMapping("/register")
 //    public String registerUser(@ModelAttribute UserDTO userDTO) {
 //        userService.registerUser(userDTO);
-//        return "redirect:/login";
+//        return "redirect:/login.html";
 //    }
 //
 //    @GetMapping("/profile")

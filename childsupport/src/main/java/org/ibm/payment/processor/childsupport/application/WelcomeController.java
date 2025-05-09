@@ -12,6 +12,4 @@ public class WelcomeController {
         return "home";
     }
 
-
-
 }

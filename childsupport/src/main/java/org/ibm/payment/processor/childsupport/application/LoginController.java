@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class LoginController {
 
-    @GetMapping("/login/{role}")
-    public String loginPage(Model model) {
+    @GetMapping("/login.html")
+    public String login(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
         String role = auth.getAuthorities().stream()
                 .findFirst()
-                .map(g -> g.getAuthority().replace("ROLE_", "role"))
+                .map(g -> g.getAuthority().replace("ROLE_", ""))
                 .orElse("guest");
-
+//
         model.addAttribute("username", username);
         model.addAttribute("role", role.toLowerCase()); // "admin",
 
