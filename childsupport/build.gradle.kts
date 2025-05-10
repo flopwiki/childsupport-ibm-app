@@ -26,7 +26,7 @@ repositories {
 dependencies {
 
 	// developmenOnly
-	developmentOnly("org.springframework.boot:spring-boot-devtools")
+	//developmentOnly("org.springframework.boot:spring-boot-devtools")
 
 
 
@@ -46,7 +46,7 @@ dependencies {
 
 	// compileOnly
 	compileOnly("org.projectlombok:lombok")
-	compileOnly("org.springframework.boot:spring-boot-devtools")
+	//compileOnly("org.springframework.boot:spring-boot-devtools")
 
 	// annotationProcessor
 	annotationProcessor("org.projectlombok:lombok")
