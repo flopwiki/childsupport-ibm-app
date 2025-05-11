@@ -20,10 +20,12 @@
 <main>
     <section class="welcome">
         <h2>Welcome to the Child Support Payment Portal</h2>
+        <p>Welcome, <span th:text="${username}">User</span></p>
+
         <p>This system helps manage child support payments efficiently and securely.</p>
         <div class="features">
             <div class="feature">
-                <h3>For Payers</h3>
+                <a th:href="@{/payments}">For Payers</a>
                 <p>Make payments, view payment history, and track obligations.</p>
             </div>
             <div class="feature">

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+
+<h1>Payments</h1>
+
+<!-- Payment Form -->
+<section id="make-payment">
+    <h2>Make a Payment</h2>
+    <form action="/payments" method="post">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method">
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+        </select>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</section>
+
+<!-- Payment History -->
+<section id="payment-history">
+    <h2>Payment History</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Method</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Payment records should be dynamically populated -->
+        <tr>
+            <td>2025-05-01</td>
+            <td>$50.00</td>
+            <td>Credit Card</td>
+            <td>Completed</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Obligation Tracker -->
+<section id="track-obligations">
+    <h2>Pending Payments</h2>
+    <ul>
+        <li>Subscription due on **May 15** - $20.00</li>
+        <li>Loan repayment due on **May 30** - $100.00</li>
+    </ul>
+</section>
+
+</body>
+</html>
