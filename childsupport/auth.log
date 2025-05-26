@@ -1,0 +1,16 @@
+2025-05-26T14:55:40.061-04:00  INFO 7218 --- [childsupport] [main] o.i.p.p.c.ChildsupportApplication        : Starting ChildsupportApplication using Java 21.0.6 with PID 7218 (/home/llanh-mock/IdeaProjects/childsupport-ibm-app/childsupport/build/classes/java/main started by llanh-mock in /home/llanh-mock/IdeaProjects/childsupport-ibm-app/childsupport)
+2025-05-26T14:55:40.062-04:00  INFO 7218 --- [childsupport] [main] o.i.p.p.c.ChildsupportApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-26T14:55:41.110-04:00  INFO 7218 --- [childsupport] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-26T14:55:41.121-04:00  INFO 7218 --- [childsupport] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-26T14:55:41.121-04:00  INFO 7218 --- [childsupport] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-26T14:55:41.155-04:00  INFO 7218 --- [childsupport] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-26T14:55:41.155-04:00  INFO 7218 --- [childsupport] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1062 ms
+2025-05-26T14:55:41.379-04:00  INFO 7218 --- [childsupport] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-26T14:55:41.707-04:00  INFO 7218 --- [childsupport] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-05-26T14:55:42.118-04:00  INFO 7218 --- [childsupport] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-26T14:55:42.135-04:00  INFO 7218 --- [childsupport] [main] o.i.p.p.c.ChildsupportApplication        : Started ChildsupportApplication in 2.453 seconds (process running for 2.697)
+2025-05-26T14:55:54.726-04:00  INFO 7218 --- [childsupport] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-26T14:55:54.726-04:00  INFO 7218 --- [childsupport] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-26T14:55:54.728-04:00  INFO 7218 --- [childsupport] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-26T14:56:17.878-04:00  INFO 7218 --- [childsupport] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-26T14:56:17.889-04:00  INFO 7218 --- [childsupport] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
