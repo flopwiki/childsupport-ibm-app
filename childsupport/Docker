@@ -1,0 +1,9 @@
+# Cache dependencies
+COPY build.gradle.kts settings.gradle.kts ./
+RUN grade dependencies --no-daemon
+
+# Build Application
+COPY src ./src
+RUN gradle build --no-daemon -x test
+
+# Run Stage

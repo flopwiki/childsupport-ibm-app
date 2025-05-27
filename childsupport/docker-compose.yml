@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: 'postgres:17'
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=childsupport1234'
+      - 'POSTGRES_DB=childsupport-db'
+    ports:
+      - '5432:5432'
+    labels:
+      org.springframework.boot.jdbc.parameters: 'ssl=true&sslmode=require'
+
+  childsupport-ibm-app:
+    container_name: childsupport-app
+    ports:
+      - "8080:8080"
+    environment:
+          SPRING_DATASOURCE_URL: jdbc:postgresql://127.0.0.1:5432/childsupport-db?ssl=true&sslmode=require
+          SPRING_DATASOURCE_USERNAME: postgres
+          SPRING_DATASOURCE_PASSWORD: childsupport1234
+
+    depends_on:
+          postgres:
+            condition: service_healthy
